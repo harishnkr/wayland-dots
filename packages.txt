@@ -1,0 +1,8 @@
+hyprland
+waybar
+hyprpaper
+wezterm
+wofi
+foot
+sddm-astronaut-theme
+hyprshot
