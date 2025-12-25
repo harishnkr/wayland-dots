@@ -6,7 +6,8 @@
   "modules-left": [
   "hyprland/workspaces",
   "custom/uptime",
-  "cpu"
+  "cpu",
+  "mpd"
   ],
 
   "modules-center": ["clock"],
@@ -61,7 +62,18 @@
     "format-alt": "{:%d-%m-%Y}",
     "interval": 1
   },
-
+"mpd": {
+    "format": "{stateIcon} {artist} - {title}",
+    "format-paused": "  {artist} - {title}",
+    "format-stopped": "  stopped",
+    "format-playing": "  {artist} - {title}",
+    "tooltip": false,
+    "on-click": "mpc toggle",
+    "on-scroll-up": "mpc next",
+    "on-scroll-down": "mpc prev",
+    "max-length": 40,
+    "interval": 2
+    },
   "network": {
     "format-wifi": "󰤢",
     "format-ethernet": "󰈀 ",
